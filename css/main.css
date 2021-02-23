@@ -1,0 +1,243 @@
+﻿.container {
+	width: 630px;
+	margin: auto;
+}
+
+#chess {
+	float: left;
+}
+
+#trash {
+	float: right;
+	width: 106px;
+	height: 510px;
+	overflow: scroll;
+	border: 1px dashed #ccc;
+	background: #eee;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	padding-top: 20px;
+	margin: 2px 0 0 10px;
+}
+
+#trash:before {
+	display: block;
+	position: absolute;
+	content: 'زباله';
+	width: 50px;
+	top: -1px;
+	left: -1px;
+	border-radius: 0 0 5px 0;
+	border: 1px dashed #ccc;
+	background: #ddd;
+	font-size: 14px;
+	line-height: 22px;
+	z-index: 1;
+}
+
+#trash a {
+	display: inline-block;
+	width: 100%;
+}
+
+.turn {
+	font-size: 20px;
+	text-align: center;
+	background: #EEE;
+	border-radius: 10px 10px 0 0;
+	margin: 0 0 5px 2px;
+	padding: 10px;
+}
+
+.turn .color {
+	color: #fff;
+	text-shadow: 0 0 3px #000;
+}
+
+.turn .color:before {
+	content: ' ◎ ';
+}
+
+.turn .color:after {
+	content: 'سفید ';
+}
+
+.turn .color.black {
+	color: #000;
+	text-shadow: none;
+}
+
+.turn .color.black:before {
+	content: ' ◉ ';
+}
+
+.turn .color.black:after {
+	content: 'سیاه ';
+}
+
+
+
+
+.endPage {
+	clear: both;
+	background: #eee;
+	border-radius: 0 0 10px 10px;
+	margin: 5px 0 0 2px;
+	position: relative;
+	top: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+.endPage .btn {
+	padding: 2px 10px;
+	border: 1px solid #ccc;
+	background: #ddd;
+	border-radius: 5px;
+	color: #333;
+	line-height: 20px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.endPage .btn:hover {
+	padding: 2px 10px;
+	border: 1px solid #aaa;
+	background: #ccc;
+	color: #000;
+}
+
+
+
+
+
+.winner {
+	font-size: 20px;
+	text-align: center;
+	background: #EEE;
+	border-radius: 10px 10px 0 0;
+	margin: 0 0 5px 2px;
+	padding: 10px;
+	color: #0fa53d;
+}
+
+.winner .color {
+	color: #fff;
+	text-shadow: 0 0 3px #000;
+}
+
+.winner .color:before {
+	content: ' ◎ ';
+}
+
+.winner .color:after {
+	content: 'سفید ';
+}
+
+.winner .color.black {
+	color: #000;
+	text-shadow: none;
+}
+
+.winner .color.black:before {
+	content: ' ◉ ';
+}
+
+.winner .color.black:after {
+	content: 'سیاه ';
+}
+
+
+
+
+
+
+
+
+
+
+
+.chess {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	margin: auto;
+}
+
+td {
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+a {
+	font-weigt: 600;
+	font-size: 50px;
+	color: white;
+	text-shadow: black 1px 1px 2px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	line-height: 60px;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+	background-color: grey;
+}
+
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+	background-color: #CCC;
+}
+
+
+
+.figure-1:before {
+	content: '♖';
+}
+
+.figure-2:before {
+	content: '♘';
+}
+
+.figure-3:before {
+	content: '♗';
+}
+
+.figure-4:before {
+	content: '♕';
+}
+
+.figure-5:before {
+	content: '♔';
+}
+
+.figure-6:before {
+	content: '♙';
+}
+
+[data-player='2'] {
+	color: #000;
+	text-shadow: none;
+}
+
+
+.place-enemy {
+	/*box-shadow: 0 0 1px 1px #0f0 inset, 0 0 10px #0f0 inset;*/
+	box-shadow: 0 0 3px 3px #f00 inset;
+}
+
+.place {
+	/*box-shadow: 0 0 1px 1px #0f0 inset, 0 0 10px #0f0 inset;*/
+	box-shadow: 0 0 3px 3px #0f0 inset;
+}
